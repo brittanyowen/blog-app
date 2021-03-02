@@ -1,7 +1,7 @@
 const Post = require("../models/post");
 const db = require("../db/connection");
 
-db.on("error", console.error.bind(console, "MongoDB connection erro"));
+db.on("error", console.error.bind(console, "MongoDB connection error"));
 
 const getPosts = async (req, res) => {
   try {
