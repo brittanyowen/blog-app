@@ -45,7 +45,6 @@ const PostEdit = (props) => {
     <Layout user={props.user}>
       <div className="post-edit">
         <div className="image-container">
-          <img className="edit-post-image" src={post.imgURL} alt={post.title} />
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"

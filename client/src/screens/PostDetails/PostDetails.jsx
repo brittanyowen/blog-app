@@ -1,23 +1,31 @@
 import React, { useState, useEffect } from "react";
-import './PostDetails.css'
+import "./PostDetails.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
 import { useParams, Link } from "react-router-dom";
-
-const PostDetails = (props) => {
+import { Redirect } from "react-router-dom";
+const PostDetails = () => {
   const [post, setPost] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const [isDeleted, setIsDeleted] = useState(false);
 
   useEffect(() => {
-    const fetchProduct = async () => {
+    const fetchPost = async () => {
       const post = await getPost(id);
       setPost(post);
       setLoaded(true);
     };
-    fetchProduct();
+    fetchPost();
   }, [id]);
 
+  const handleClick = () => {
+    deletePost(post._id);
+    setIsDeleted(!isDeleted);
+  };
+  if (isDeleted) {
+    return <Redirect to="/" />;
+  }
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
@@ -36,14 +44,11 @@ const PostDetails = (props) => {
           <div className="content">{post.content}</div>
           <div className="button-container">
             <button className="edit-button">
-              <Link className="edit-link" to={`/posts/${post.id}/edit`}>
+              <Link className="edit-link" to={`/posts/${post._id}/edit`}>
                 Edit
               </Link>
             </button>
-            <button
-              className="delete-button"
-              onClick={() => deletePost(post.id)}
-            >
+            <button className="delete-button" onClick={() => handleClick()}>
               Delete
             </button>
           </div>
