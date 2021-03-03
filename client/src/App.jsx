@@ -13,9 +13,9 @@ function App() {
           PostDetails
         </Route>
         <Route path="/add-post">PostCreate</Route>
-        component={PostCreate}
+       <PostCreate />
         <Route exact path="/posts/:id/edit">
-          component={PostEdit}
+          <PostEdit />
         </Route>
       </Switch>
     </div>
