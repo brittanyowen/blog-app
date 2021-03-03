@@ -1,15 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
 import PostEdit from "../src/screens/PostEdit/PostEdit"
 import { Route, Switch } from "react-router-dom";
+import Posts from "./screens/Posts/Posts";
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
-          Home/Posts
-        </Route>
+        <Route exact path="/" component={Posts} />
         <Route exact path="/posts/:id">
           PostDetails
         </Route>
