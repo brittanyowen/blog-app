@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import PostEdit from "../src/screens/PostEdit/PostEdit"
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         </Route>
         <Route path="/add-post">PostCreate</Route>
         <Route exact path="/posts/:id/edit">
-          PostEdit
+          component={PostEdit}
         </Route>
       </Switch>
     </div>
