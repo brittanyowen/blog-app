@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Search from "../../components/Search/Search";
 import { AZauthor, ZAauthor, AZtitle, ZAtitle } from "../../utils/sort";
 import Sort from "../shared/Sort/Sort";
+import "./PostCards.css";
 function PostCards(props) {
   const [posts, setPosts] = useState([]);
   const [queriedPosts, setQueriedPosts] = useState([]);
@@ -45,20 +46,22 @@ function PostCards(props) {
   const handleSubmit = (event) => event.preventDefault();
   const CARDS = queriedPosts
     .reverse()
-    .map((post) => (
-      <PostCard
-        _id={post._id}
-        author={post.author}
-        content={post.content}
-        imgURL={post.imgURL}
-        key={post._id}
-      />
-    ));
+    .map((post, index) =>
+      index < 5 ? (
+        <PostCard
+          _id={post._id}
+          author={post.author}
+          content={post.content}
+          imgURL={post.imgURL}
+          key={post._id}
+        />
+      ) : null
+    );
   return (
     <div className="post-cards">
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      <div className="latest">LATEST</div>
+      <div className="feed">Feed</div>
       <div className="cards">{CARDS}</div>
     </div>
   );
