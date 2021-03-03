@@ -78,7 +78,7 @@ const PostEdit = (props) => {
             className="textarea-content"
             rows={10}
             cols={78}
-            placeholder="Content"
+            placeholder="content"
             value={post.content}
             name="content"
             required
