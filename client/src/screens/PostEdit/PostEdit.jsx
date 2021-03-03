@@ -15,7 +15,6 @@ const PostEdit = (props) => {
 
 const [isUpdated, setUpdated] = useState(false)
 const { id } = useParams()
-const history=useHistory()
 
 useEffect(() => {
   const fetchPost = async () => {
