@@ -12,11 +12,9 @@ function App() {
         <Route exact path="/posts/:id">
           PostDetails
         </Route>
-        <Route path="/add-post">PostCreate</Route>
-       <PostCreate />
-        <Route exact path="/posts/:id/edit">
-        </Route>
-        <PostEdit />
+        <Route path="/add-post" component={PostCreate} />
+        <Route exact path="/posts/:id/edit" component={PostEdit} />
+      
       </Switch>
     </div>
   );
