@@ -15,8 +15,8 @@ function App() {
         <Route path="/add-post">PostCreate</Route>
        <PostCreate />
         <Route exact path="/posts/:id/edit">
-          <PostEdit />
         </Route>
+        <PostEdit />
       </Switch>
     </div>
   );
