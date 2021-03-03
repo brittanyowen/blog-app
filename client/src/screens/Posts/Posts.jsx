@@ -3,11 +3,11 @@ import Layout from "../../components/shared/Layout/Layout";
 
 function Posts() {
   return (
-    // <Layout>
-    <div className="home">
-      <PostCards />
-    </div>
-    // </Layout>
+    <Layout>
+      <div className="home">
+        <PostCards />
+      </div>
+    </Layout>
   );
 }
 
