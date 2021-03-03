@@ -2,6 +2,7 @@ import "./App.css";
 import PostEdit from "../src/screens/PostEdit/PostEdit"
 import { Route, Switch } from "react-router-dom";
 import Posts from "./screens/Posts/Posts";
+import PostCreate from "../src/screens/PostCreate/PostCreate"
 
 function App() {
   return (
@@ -11,10 +12,9 @@ function App() {
         <Route exact path="/posts/:id">
           PostDetails
         </Route>
-        <Route path="/add-post">PostCreate</Route>
-        <Route exact path="/posts/:id/edit">
-          component={PostEdit}
-        </Route>
+        <Route path="/add-post" component={PostCreate} />
+        <Route exact path="/posts/:id/edit" component={PostEdit} />
+      
       </Switch>
     </div>
   );
