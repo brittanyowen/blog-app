@@ -10,7 +10,7 @@ const Nav = () => {
           BlogApp
         </NavLink>
         <div className="links">
-          <NavLink className="all-posts-link" to="/posts">
+          <NavLink className="all-posts-link" to="/">
             All Posts
           </NavLink>
           <NavLink className="create-post-link" to="/add-post">
