@@ -1,5 +1,6 @@
 import PostCards from "../../components/PostCards/PostCards";
 import Layout from "../../components/shared/Layout/Layout";
+import "./Posts.css";
 function Posts() {
   return (
     <Layout>
