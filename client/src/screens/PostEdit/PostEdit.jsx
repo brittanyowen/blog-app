@@ -3,6 +3,7 @@ import "./PostEdit.css";
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, updatePost } from "../../services/posts";
+import Error from "../../asset/404.png"
 
 const PostEdit = (props) => {
   const [post, setPost] = useState({
@@ -45,6 +46,8 @@ const PostEdit = (props) => {
     <Layout user={props.user}>
       <div className="post-edit">
         <div className="image-container">
+          <img className="edit-post-image" src={!post.imgURL ? post.imgURL :Error } alt={post.title} />
+
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
