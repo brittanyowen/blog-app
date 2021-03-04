@@ -41,12 +41,16 @@ const PostEdit = (props) => {
   if (isUpdated) {
     return <Redirect to={`/posts/${props.match.params.id}`} />;
   }
+  //if no valid pic url,show404error
+  function defaultSrc(e) {
+    e.target.src=Error
+  }
 
   return (
     <Layout user={props.user}>
       <div className="post-edit">
         <div className="image-container">
-          <img className="edit-post-image" src={!post.imgURL ? post.imgURL :Error } alt={post.title} />
+          <img className="edit-post-image" src={post.imgURL} alt={post.title} onError={ defaultSrc}/>
 
           <form onSubmit={handleSubmit}>
             <input
