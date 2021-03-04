@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 80%;
+  width: 80vw;
   justify-content:space-evenly;
   align-items: left;
   margin:auto;
@@ -16,6 +16,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 input, textarea {
+ 
   font-size: 48px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   /* border-top-style: hidden;
@@ -23,6 +24,7 @@ input, textarea {
   border-left-style: hidden;
   border-bottom-style: hidden; */
   margin-top:10px;
+  
 }
 
 textarea {
@@ -31,12 +33,13 @@ textarea {
 }
 
 .input-author {
+
   font-size: 48px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .input-title {
-  padding-left: 10px;
+ 
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -66,4 +69,8 @@ textarea {
   input, textarea {
       font-size: 28px;
   }
+  .input-author{
+    font-size: 28px;
+   margin:auto;}
+   
 }
