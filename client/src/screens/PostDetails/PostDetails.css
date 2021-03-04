@@ -24,6 +24,22 @@
 .detail-container .content {
   text-align: left;
   font-size: 2vw;
+  font-size: max(3vw, 25px);
+}
+
+.detail-container .author {
+  font-size: max(2vw, 20px);
+}
+
+.post-detail-image {
+  max-width: 50vw;
+  max-height: 50vw;
+  margin-top: 10px;
+}
+
+.detail-container .content {
+  text-align: left;
+  font-size: max(1vw, 15px);
 }
 
 .button-container {
