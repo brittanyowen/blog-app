@@ -8,7 +8,4 @@ footer {
   display: flex;
   align-items: center; 
   justify-content: center;
-  width: 100vw;
-  border-bottom: solid 1px black;
-  background-color: #c8d5b9;
 }
