@@ -1,7 +1,12 @@
 nav {
   position: fixed;
+<<<<<<< HEAD
   top: 0;
   width: 100vw;
+=======
+  top: 0; 
+  width: 100%; 
+>>>>>>> ee573fd7460b27a9df2b3a5e3406ac73c9def288
   border-bottom: solid 1px black;
   background-color: #c8d5b9;
 }
@@ -26,8 +31,13 @@ a.title.active {
 a.all-posts-link.active {
   color: #2e4d36;
 }
+<<<<<<< HEAD
 a.create-post-link.active {
   color: #2e4d36;
+=======
+a.create-post-link {
+  color: #2e4d36; 
+>>>>>>> ee573fd7460b27a9df2b3a5e3406ac73c9def288
 }
 
 .links {
