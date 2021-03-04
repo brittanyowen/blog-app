@@ -14,6 +14,7 @@
   width: 500px;
   padding: 0 40px;
   padding-bottom: 5px;
+  border-radius: 50%;
 }
 
 .edit-input-image-link {
@@ -28,7 +29,7 @@
   line-height: 1.6;
 }
 
-.input-author {
+.input-title {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 64px;
   letter-spacing: 1px;
