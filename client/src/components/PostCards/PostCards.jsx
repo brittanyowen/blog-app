@@ -60,8 +60,8 @@ function PostCards(props) {
     );
   return (
     <div className="post-cards">
-      <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
+      <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <div className="feed">Feed</div>
       <div className="cards">{CARDS}</div>
     </div>
