@@ -43,14 +43,17 @@ const PostEdit = (props) => {
   }
   //if no valid pic url,show404error
   function defaultSrc(e) {
-    e.target.src=Error
+    e.target.src = Error
   }
 
   return (
     <Layout user={props.user}>
       <div className="post-edit">
         <div className="image-container">
-          <img className="edit-post-image" src={post.imgURL} alt={post.title} onError={ defaultSrc}/>
+
+          <img className="edit-post-image" src={post.imgURL} alt={post.title} onError={defaultSrc} />
+          <label htmlFor="edit-input-image-link">Image Link</label>
+
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
@@ -63,6 +66,8 @@ const PostEdit = (props) => {
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
+          <label htmlFor="input-author">Author: </label>
+          <br/>
           <input
             className="input-author"
             placeholder="author"
@@ -72,6 +77,9 @@ const PostEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
+          <br/>
+          <label htmlFor="input-title">Title: </label>
+          <br/>
           <input
             className="input-title"
             placeholder="Title"
@@ -80,6 +88,9 @@ const PostEdit = (props) => {
             required
             onChange={handleChange}
           />
+          <br/>
+          <label htmlFor="textarea-content">Content: </label>
+          <br/>
           <textarea
             className="textarea-content"
             rows={10}
@@ -90,6 +101,7 @@ const PostEdit = (props) => {
             required
             onChange={handleChange}
           />
+          <br/>
           <button type="submit" className="save-button">
             Save
           </button>
