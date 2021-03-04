@@ -14,11 +14,20 @@ nav {
 }
 
 .nav a {
-  color: #2e4d36; 
   font-size: 30px;
   font-weight: bold; 
   text-align: left;
   text-decoration: none;
+}
+
+a.title.active {
+  color: #2e4d36; 
+}
+a.all-posts-link.active {
+  color: #2e4d36; 
+}
+a.create-post-link.active {
+  color: #2e4d36; 
 }
 
 .links {
