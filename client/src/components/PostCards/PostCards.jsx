@@ -62,7 +62,7 @@ function PostCards(props) {
     <div className="post-cards">
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
-      <div className="feed">Feed</div>
+      {/* <div className="feed">Feed</div> */}
       <div className="cards">{CARDS}</div>
     </div>
   );

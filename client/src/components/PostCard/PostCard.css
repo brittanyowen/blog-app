@@ -19,7 +19,7 @@
 }
 
 .post-card-image {
-  width: 300px;
+  height: 30vh;
 }
 
 .cards a {
@@ -27,7 +27,7 @@
   text-decoration: none;
   letter-spacing: 0.7px;
 }
-a:visited {
+.cards a:visited {
   color: black;
 }
 
