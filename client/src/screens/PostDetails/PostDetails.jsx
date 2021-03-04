@@ -42,6 +42,7 @@ const PostDetails = () => {
             alt={post.title}
           />
           <div className="content">{post.content}</div>
+        </div>
           <div className="button-container">
             <button className="edit-button">
               <Link className="edit-link" to={`/posts/${post._id}/edit`}>
@@ -52,7 +53,6 @@ const PostDetails = () => {
               Delete
             </button>
           </div>
-        </div>
       </div>
     </Layout>
   );

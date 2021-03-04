@@ -47,8 +47,9 @@ function PostCards(props) {
   const CARDS = queriedPosts
     .reverse()
     .map((post, index) =>
-      index < 5 ? (
+      index < 8 ? (
         <PostCard
+          title={post.title}
           _id={post._id}
           author={post.author}
           content={post.content}
