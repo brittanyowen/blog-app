@@ -4,10 +4,9 @@
 }
 
 .layout-children {
-  height: 100vh; 
+  /* height: 100vh;  */
   margin-top: 80px;
   display: flex; 
   flex-flow: column wrap; 
-  /* justify-content: center;  */
 }
 
