@@ -1,40 +1,40 @@
 nav {
   position: fixed;
-  top: 0; 
-  width: 100vw; 
+  top: 0;
+  width: 100vw;
   border-bottom: solid 1px black;
-  background-color: #c8d5b9; 
+  background-color: #c8d5b9;
 }
 
 .nav {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
-  margin: 20px; 
+  margin: 20px;
 }
 
 .nav a {
   font-size: max(3vw, 30px);
-  font-weight: bold; 
+  font-weight: bold;
   text-align: left;
   text-decoration: none;
 }
 
 a.title.active {
-  color: #2e4d36; 
+  color: #2e4d36;
 }
 a.all-posts-link.active {
-  color: #2e4d36; 
+  color: #2e4d36;
 }
 a.create-post-link.active {
-  color: #2e4d36; 
+  color: #2e4d36;
 }
 
 .links {
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .links a {
   font-size: 18px;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
