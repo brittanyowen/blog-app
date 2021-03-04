@@ -14,7 +14,7 @@ nav {
 }
 
 .nav a {
-  font-size: 30px;
+  font-size: max(3vw, 30px);
   font-weight: bold; 
   text-align: left;
   text-decoration: none;
