@@ -8,7 +8,6 @@
   align-items: left;
   margin:auto;
 
-
 }
 
 input:focus, textarea:focus, select:focus {
@@ -24,12 +23,14 @@ input, textarea {
   border-left-style: hidden;
   border-bottom-style: hidden; */
   margin-top:10px;
+
   
 }
 
 textarea {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .input-author {
@@ -39,7 +40,6 @@ textarea {
 }
 
 .input-title {
- 
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -63,7 +63,7 @@ textarea {
 
 @media (max-width: 500px) {
   .create-form {
-      padding-top: 150px;
+      padding-top: 30px;
   }
   
   input, textarea {
