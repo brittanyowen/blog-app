@@ -44,25 +44,22 @@ function PostCards(props) {
     setQueriedPosts(newQueriedPosts, () => handleSort(sortType));
   };
   const handleSubmit = (event) => event.preventDefault();
-  const CARDS = queriedPosts
-    .reverse()
-    .map((post, index) =>
-      index < 8 ? (
-        <PostCard
-          title={post.title}
-          _id={post._id}
-          author={post.author}
-          content={post.content}
-          imgURL={post.imgURL}
-          key={post._id}
-        />
-      ) : null
-    );
+  const CARDS = queriedPosts.map((post, index) =>
+    index < 8 ? (
+      <PostCard
+        title={post.title}
+        _id={post._id}
+        author={post.author}
+        content={post.content}
+        imgURL={post.imgURL}
+        key={post._id}
+      />
+    ) : null
+  );
   return (
     <div className="post-cards">
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
-      {/* <div className="feed">Feed</div> */}
       <div className="cards">{CARDS}</div>
     </div>
   );
