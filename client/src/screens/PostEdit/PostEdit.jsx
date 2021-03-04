@@ -51,7 +51,6 @@ const PostEdit = (props) => {
       <div className="post-edit">
         <div className="image-container">
           <img className="edit-post-image" src={post.imgURL} alt={post.title} onError={ defaultSrc}/>
-
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
