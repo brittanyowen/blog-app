@@ -52,11 +52,12 @@ const PostEdit = (props) => {
         <div className="image-container">
 
           <img className="edit-post-image" src={post.imgURL} alt={post.title} onError={defaultSrc} />
-          <label htmlFor="edit-input-image-link">Image Link</label>
-
+          <label htmlFor="edit-input-image-link">Image Link: </label>
+          <br/>
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
+              id="edit-input-image-link"
               placeholder="Image Link"
               value={post.imgURL}
               name="imgURL"
@@ -70,6 +71,7 @@ const PostEdit = (props) => {
           <br/>
           <input
             className="input-author"
+            id="input-author"
             placeholder="author"
             value={post.author}
             name="author"
@@ -82,6 +84,7 @@ const PostEdit = (props) => {
           <br/>
           <input
             className="input-title"
+            id="input-title"
             placeholder="Title"
             value={post.title}
             name="title"
@@ -93,6 +96,7 @@ const PostEdit = (props) => {
           <br/>
           <textarea
             className="textarea-content"
+            id="textarea-content"
             rows={10}
             cols={78}
             placeholder="content"
