@@ -71,6 +71,7 @@ textarea {
   }
   .input-author{
     font-size: 28px;
-   margin:auto;}
+   /* margin:auto; */
+  }
    
 }
