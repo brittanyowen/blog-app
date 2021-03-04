@@ -37,5 +37,16 @@ a.create-post-link {
 
 .links a {
   font-size: 18px;
-  margin-left: 20px;
+
+  margin-left: 20px; 
 }
+
+@media screen and (max-width: 400px) {
+  .nav a {
+    font-size: 22px;
+  }
+  .links a {
+    font-size: 14px;
+  }
+}
+
