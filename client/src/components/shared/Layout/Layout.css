@@ -1,8 +1,13 @@
 .layout {
   display: flex; 
-  flex-direction: column; 
+  flex-flow: column wrap; 
 }
 
 .layout-children {
-  order: 2;
+  height: 100vh; 
+  margin-top: 80px;
+  display: flex; 
+  flex-flow: column wrap; 
+  /* justify-content: center;  */
 }
+

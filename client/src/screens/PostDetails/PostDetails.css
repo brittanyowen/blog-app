@@ -1,7 +1,44 @@
+.post-detail { 
+  height: 100vh; 
+  margin: 30px auto;
+  max-width: 600px; 
+}
+
+.detail-container div {
+  margin-top: 10px; 
+}
+
 .detail-container .title {
   font-weight: bold;
+  font-size: 50px; 
+}
+
+.detail-container .author {
+  font-size: 30px; 
 }
 
 .post-detail-image {
-  max-width: 300px; 
+  max-width: 600px; 
+  max-height: 600px; 
+
 }
+
+.detail-container .content {
+  text-align: left; 
+  
+}
+
+.button-container {
+  margin-top: 25px; 
+  text-align: center; 
+}
+
+.button-container button {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2e4d36;
+  background-color: #c8d5b9; 
+  padding: 10px; 
+  margin: 20px; 
+}
+
