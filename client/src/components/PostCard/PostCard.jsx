@@ -3,16 +3,18 @@ import "./PostCard.css";
 
 const PostCard = (props) => {
   return (
-    <div className="post-card">
-      <Link className="card" to={`/posts/${props._id}`}>
+    <Link className="card" to={`/posts/${props._id}`}>
+      <div className="post-card">
+        <h2>{props.title}</h2>
+        <h4>{props.author}</h4>
         <img
           className="post-card-image"
           src={props.imgURL}
           alt="blog-decoration"
         />
         <div>View</div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

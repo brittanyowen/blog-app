@@ -1,8 +1,7 @@
 footer {
   position: fixed; 
   bottom: 0; 
-  width: 100vw; 
+  width: 100vw;
   border-bottom: solid 1px black;
-  background-color: #c8d5b9; 
+  background-color: #c8d5b9;
 }
-
