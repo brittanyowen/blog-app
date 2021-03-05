@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,23 +6,23 @@ const Footer = () => {
     <footer>
       <div className="team-members">
         Designed and developed by:{" "}
-        <a target="_blank" href="https://www.linkedin.com/in/huckleberry-ginesta/">
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/huckleberry-ginesta/">
           Huckleberry Ginesta
         </a>
         ,{" "}
-        <a target="_blank" href="https://www.linkedin.com/in/zoe-zhenwen-li-65343a179/">
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zoe-zhenwen-li-65343a179/">
           Zoe Li
         </a>
         , and{" "}
-        <a target="_blank" href="https://www.linkedin.com/in/bnowen/">Brittany Owen</a>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bnowen/">Brittany Owen</a>
       </div>
       <div className="icon">
         Icons made by{" "}
-        <a target="_blank" href="https://www.freepik.com" title="Freepik">
+        <a target="_blank" rel="noreferrer" href="https://www.freepik.com" title="Freepik">
           Freepik
         </a>{" "}
         from{" "}
-        <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">
+        <a target="_blank" rel="noreferrer" href="https://www.flaticon.com/" title="Flaticon">
           www.flaticon.com
         </a>
       </div>
