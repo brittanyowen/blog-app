@@ -7,23 +7,23 @@ const Footer = () => {
     <footer>
       <div className="team-members">
         Designed and developed by:{" "}
-        <Link to="https://www.linkedin.com/in/huckleberry-ginesta/">
+        <a target="_blank" href="https://www.linkedin.com/in/huckleberry-ginesta/">
           Huckleberry Ginesta
-        </Link>
+        </a>
         ,{" "}
-        <Link to="https://www.linkedin.com/in/zoe-zhenwen-li-65343a179/">
+        <a target="_blank" href="https://www.linkedin.com/in/zoe-zhenwen-li-65343a179/">
           Zoe Li
-        </Link>
+        </a>
         , and{" "}
-        <Link to="https://www.linkedin.com/in/bnowen/">Brittany Owen</Link>
+        <a target="_blank" href="https://www.linkedin.com/in/bnowen/">Brittany Owen</a>
       </div>
       <div className="icon">
         Icons made by{" "}
-        <a href="https://www.freepik.com" title="Freepik">
+        <a target="_blank" href="https://www.freepik.com" title="Freepik">
           Freepik
         </a>{" "}
         from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
+        <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">
           www.flaticon.com
         </a>
       </div>
