@@ -1,11 +1,49 @@
 footer {
   position: fixed; 
   bottom: 0; 
+  left: 0;
   width: 100%; 
   border-top: solid 1px black;
   background-color: #c8d5b9;
   height: 5vh; 
   display: flex;
   align-items: center; 
-  justify-content: center;
+  justify-content: space-around;
+}
+
+footer a {
+  color: #2e4d36;
+}
+footer a:visited {
+  color: #2e4d36;
+}
+footer a:hover{
+  color: white;
+}
+
+.team-members a{
+  font-weight:bold; 
+}
+.icon {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-flow: column wrap; 
+    justify-content: center;
+  }
+  .team-members {
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .team-members {
+    font-size: 8px;
+  }
+  .icon {
+    font-size: 8px;
+  }
 }
